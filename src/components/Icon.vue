@@ -1,0 +1,10 @@
+<script lang="ts" setup>
+defineProps<{
+  icon: string;
+  size?: 'xs' | 'sm' | 'md' | 'lg' | '2x' | '3x' | '4x' | '5x' | '6x' | '7x' | '8x' | '9x' | '10x';
+}>();
+</script>
+
+<template>
+  <faicon :icon="icon" :class="`fa-${size}`" />
+</template>
