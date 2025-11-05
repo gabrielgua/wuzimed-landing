@@ -7,9 +7,10 @@ import Icon from './Icon.vue';
 </script>
 
 <template>
-  <main class="relative py-12 md:py-24 inset-shadow-[-1px_-7px_33px_12px_rgba(255,255,255,0.1)] inset-shadow-white/80">
-    <svg class="absolute bottom-0 left-0 w-full -z-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="var(--color-primary-100)" fill-opacity=".5"
+  <main
+    class="relative py-12 md:py-24 inset-shadow-[-1px_-7px_33px_12px_rgba(255,255,255,0.1)] inset-shadow-white/80 bg-primary-100">
+    <svg class="absolute bottom-0 left-0 w-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="var(--color-white)"
         d="M0,192L80,181.3C160,171,320,149,480,144C640,139,800,149,960,160C1120,171,1280,181,1360,186.7L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
       </path>
     </svg>

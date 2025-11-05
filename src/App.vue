@@ -7,6 +7,7 @@ import Card from './components/Card.vue';
 import Button from './components/Button.vue';
 import Icon from './components/Icon.vue';
 import PartnerBrandBox from './components/PartnerBrandBox.vue';
+import Container from './components/Container.vue';
 
 const categories = computed(() => [
   { title: 'Category 1', description: 'Description 1', img: 'https://placehold.co/200' },
@@ -45,7 +46,8 @@ const categories = computed(() => [
     </template>
   </Section>
 
-  <Section class="bg-slate-100">
+  <Section class="bg-slate-50 bg-[url('/src/assets/svgs/wave.svg')] bg-no-repeat bg-cover bg-center"
+    :style="{ '--wave-color': 'var(--color-primary-950)' }">
     <template #title>
       <div class="text-center">Our Partners</div>
     </template>
@@ -55,14 +57,9 @@ const categories = computed(() => [
       </div>
     </template>
     <template #content>
-      <svg class="absolute -bottom-10 left-0 rotate-y-180 h-[1000px] sm:h-[500px]" xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320">
-        <path fill="var(--color-primary-950)"
-          d="M0,192L80,181.3C160,171,320,149,480,144C640,139,800,149,960,160C1120,171,1280,181,1360,186.7L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
-        </path>
-      </svg>
+
       <div
-        class="flex flex-wrap items-center z-10 justify-between gap-10 bg-white p-8 shadow-2xl shadow-primary-100/20 rounded-xl">
+        class="flex flex-wrap items-center z-10 justify-between gap-10 bg-white border border-slate-200 p-7 shadow-2xl shadow-primary-100/20 rounded-xl">
 
         <PartnerBrandBox>
           <img src="../src/assets/images/partners/bd.jpeg" alt="BD" class="scale-80" />
