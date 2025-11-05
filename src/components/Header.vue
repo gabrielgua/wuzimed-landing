@@ -7,7 +7,7 @@ import Logo from './Logo.vue';
 </script>
 
 <template>
-  <header class="bg-slate-50 shadow-2xl shadow-slate-200 sticky top-0 z-50">
+  <header class="bg-white shadow-2xl shadow-slate-200 sticky top-0 z-50">
     <Container class="flex items-center justify-between py-4 md:py-8 transition-all">
       <RouterLink to="/">
         <Logo />
