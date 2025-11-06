@@ -5,7 +5,7 @@ import Section from './Section.vue';
 </script>
 
 <template>
-  <Section class="bg-slate-50 bg-[url('/src/assets/svgs/wave_blue.svg')] bg-no-repeat bg-cover bg-center">
+  <Section class="bg-bg-base bg-[url('/src/assets/svgs/wave_blue.svg')] bg-no-repeat bg-cover bg-center">
     <template #title>
       <div class="text-center">Our Partners</div>
     </template>

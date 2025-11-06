@@ -18,7 +18,7 @@ const showContent = ref(false)
       <h3 class="font-bold text-base text-text-primary">
         <slot name="title" />
       </h3>
-      <Icon icon="chevron-down" class="text-sm text-text-secondary ml-auto transition-all"
+      <Icon icon="angle-down" class="text-sm text-text-secondary ml-auto transition-all"
         :class="{ 'rotate-180': showContent }" />
     </div>
     <Transition name="fade-from-top" mode="out-in">

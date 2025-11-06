@@ -38,9 +38,9 @@ import Section from './Section.vue';
             Our commitment to excellence is reflected in our rigorous quality standards and continuous improvement
             initiatives.
           </div>
-          <Button variant="primary" size="lg">
+          <Button variant="primary" size="lg" class="w-full justify-between lg:max-w-max">
             Learn More
-            <Icon icon="arrow-right" class="ml-2" />
+            <Icon icon="arrow-right" class="text-xs" />
           </Button>
         </div>
 
@@ -89,19 +89,16 @@ import Section from './Section.vue';
 
         <div class="space-y-6">
           <div class="size-14 bg-white rounded-full grid place-items-center">
-            <Icon icon="info-circle" class="text-2xl text-primary-500" />
+            <Icon icon="bullseye" class="text-2xl text-primary-500" />
           </div>
           <h2 class="font-bold text-3xl">Why choose us?</h2>
-          <div class="mb-6 text-base text-slate-300">
+          <p class="text-base text-slate-300">
             Choosing us means partnering with a team that is dedicated to your success. We bring a wealth of
             experience and expertise to the table, ensuring that our solutions are not only effective but also
             innovative and forward-thinking.
-          </div>
+          </p>
         </div>
-
       </div>
     </template>
-
   </Section>
-
 </template>

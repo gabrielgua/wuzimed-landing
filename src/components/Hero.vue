@@ -7,18 +7,16 @@ import Icon from './Icon.vue';
 </script>
 
 <template>
-  <main
-    class="relative py-12 md:py-24 inset-shadow-[-1px_-7px_33px_12px_rgba(255,255,255,0.1)] inset-shadow-white/80 bg-slate-100">
-
+  <main class="relative py-12 bg-bg-base">
     <div
       class="absolute w-full h-full bottom-0 left-0 bg-[url('/src/assets/svgs/wave_white.svg')] bg-no-repeat bg-cover bg-bottom">
 
     </div>
-    <Container class="flex items-center justify-between gap-6">
+    <Container class="grid place-items-center">
       <div
-        class="relative max-w-[750px] flex flex-col items-start gap-12 border overflow-hidden border-primary-500/50 rounded-3xl shadow-xl bg-white/80 p-8">
+        class="relative max-w-[750px] flex flex-col items-start gap-12 border border-primary-500/50 rounded-3xl shadow-xl bg-white/80 p-8">
 
-        <Icon icon="info-circle" class="text-primary-500" />
+        <Icon icon="hand-sparkles" class="text-primary-500 text-2xl" />
         <div class="flex flex-col gap-6">
           <h1 class="text-4xl font-bold text-text-primary">
             <span class="text-primary-500">Welcome</span>
@@ -34,9 +32,7 @@ import Icon from './Icon.vue';
             Eveniet, quas?
           </p>
         </div>
-
-
-        <Button variant="primary" size="lg" class="max-w-max">
+        <Button variant="primary" size="lg" class="w-full justify-between">
           More information
           <Icon icon="arrow-right" size="sm" />
         </Button>
