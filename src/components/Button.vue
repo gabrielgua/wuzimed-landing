@@ -14,7 +14,7 @@ withDefaults(defineProps<ButtonProps>(), {
 });
 
 const buttonStyles = new Map<ButtonVariant, string>([
-  ['primary', 'bg-primary-500 text-white'],
+  ['primary', 'text-white bg-gradient-to-b from-sky-400 to-primary-600'],
 ])
 
 const buttonSizes = new Map<ButtonSize, string>([
@@ -28,7 +28,7 @@ const buttonSizes = new Map<ButtonSize, string>([
 </script>
 
 <template>
-  <button class="flex items-center rounded-full active:scale-[98%] cursor-pointer transition-all shadow-xs"
+  <button class="flex items-center rounded-full active:scale-[98%] cursor-pointer transition-all"
     :class="[buttonStyles.get(variant), buttonSizes.get(size)]">
     <slot />
   </button>

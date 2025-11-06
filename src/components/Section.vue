@@ -4,7 +4,7 @@ import Container from './Container.vue';
 </script>
 
 <template>
-  <section class="pt-12 pb-24 transition-all relative overflow-hidden">
+  <section class="pt-24 pb-24 transition-all relative overflow-hidden">
     <Container class="flex flex-col gap-12">
       <header>
         <h2 class="text-text-primary font-bold text-3xl mb-3" v-if="$slots['title']">

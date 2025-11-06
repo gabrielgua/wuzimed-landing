@@ -1,99 +1,73 @@
 <script setup lang="ts">
-import { computed } from 'vue';
+import AboutSection from './components/AboutSection.vue';
+import CategoriesSection from './components/CategoriesSection.vue';
 import Header from './components/Header.vue';
 import Hero from './components/Hero.vue';
-import Section from './components/Section.vue';
-import Card from './components/Card.vue';
-import Button from './components/Button.vue';
 import Icon from './components/Icon.vue';
-import PartnerBrandBox from './components/PartnerBrandBox.vue';
-import Container from './components/Container.vue';
+import PartnersSection from './components/PartnersSection.vue';
+import Section from './components/Section.vue';
 
-const categories = computed(() => [
-  { title: 'Category 1', description: 'Description 1', img: 'https://placehold.co/200' },
-  { title: 'Category 2', description: 'Description 2', img: 'https://placehold.co/200' },
-  { title: 'Category 3', description: 'Description 3', img: 'https://placehold.co/200' },
-  { title: 'Category 4', description: 'Description 4', img: 'https://placehold.co/200' },
-]);
 
 </script>
 
 <template>
   <Header />
   <Hero />
-  <Section>
-    <template #title>Our Selection</template>
-    <template #subtitle>
-      Explore our wide range of medical supplies designed to meet all your healthcare needs.
-    </template>
-    <template #content>
-      <ul class="gap-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+  <CategoriesSection />
+  <PartnersSection />
+  <AboutSection />
 
-        <Card v-for="(categorie, index) in categories" :key="index"
-          class="flex flex-col hover:scale-105 transition-all">
-          <img class="rounded-2xl w-full aspect-video max-h-[220px] object-cover" :src="categorie.img" alt="product">
-          <h2 class="font-semibold text-xl text-text-primary my-4">{{ categorie.title }}</h2>
-          <p class="text-sm mb-4">{{ categorie.description }}</p>
-
-          <div class="mt-auto">
-            <Button size="sm" class="w-full justify-center">
-              Explore
-              <Icon icon="arrow-right" size="sm" />
-            </Button>
-          </div>
-        </Card>
-      </ul>
-    </template>
-  </Section>
-
-  <Section class="bg-slate-50 bg-[url('/src/assets/svgs/wave.svg')] bg-no-repeat bg-cover bg-center"
-    :style="{ '--wave-color': 'var(--color-primary-950)' }">
+  <Section class="bg-slate-50">
     <template #title>
-      <div class="text-center">Our Partners</div>
+      Get in Touch
     </template>
     <template #subtitle>
-      <div class="text-center">
-        We collaborate with leading medical suppliers to bring you the best products available.
-      </div>
+      If you have any questions or would like to learn more about our services, please don't hesitate to reach out.
+      We're here to help!
     </template>
     <template #content>
 
-      <div
-        class="flex flex-wrap items-center z-10 justify-between gap-10 bg-white border border-slate-200 p-7 shadow-2xl shadow-primary-100/20 rounded-xl">
+      <form>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </template>
+  </Section>
+  <Section class="bg-primary-500">
 
-        <PartnerBrandBox>
-          <img src="../src/assets/images/partners/bd.jpeg" alt="BD" class="scale-80" />
-        </PartnerBrandBox>
-        <PartnerBrandBox>
-          <img src="../src/assets/images/partners/bunzil.jpeg" alt="Bunzil" class="scale-200" />
-        </PartnerBrandBox>
-        <PartnerBrandBox>
-          <img src="../src/assets/images/partners/cardinal_health.jpeg" alt="Cardinal Health" class="scale-180" />
-        </PartnerBrandBox>
-        <PartnerBrandBox>
-          <img src="../src/assets/images/partners/coloplast.jpeg" alt="Coloplast" />
-        </PartnerBrandBox>
-        <PartnerBrandBox>
-          <img src="../src/assets/images/partners/mckesson_canada.jpeg" alt="McKesson Canada" class="scale-220" />
-        </PartnerBrandBox>
-        <PartnerBrandBox>
-          <img src="../src/assets/images/partners/medline.jpeg" alt="Medline" class="max-h-full" />
-        </PartnerBrandBox>
-        <PartnerBrandBox>
-          <img src="../src/assets/images/partners/primed.jpeg" alt="Primed" class="scale-120" />
-        </PartnerBrandBox>
-        <PartnerBrandBox>
-          <img src="../src/assets/images/partners/stevens.jpeg" alt="Stevens" class="scale-120" />
-        </PartnerBrandBox>
-        <PartnerBrandBox>
-          <img src="../src/assets/images/partners/terumo.jpeg" alt="Terumo" class="scale-110" />
-        </PartnerBrandBox>
+    <template #content>
+      <div class="flex items-center justify-between">
+        <div class="space-y-4">
+          <div class="flex items-center gap-4">
+            <span class="size-10 grid place-items-center bg-white rounded-full">
+              <Icon icon="phone" class="text-primary-500" />
+            </span>
+            <p class="text-lg font-medium text-white">Phone Number</p>
+          </div>
+          <p class="text-5xl font-medium text-white">+1 (234) 567-8901</p>
+        </div>
+        <div class="space-y-4">
+          <div class="flex items-center gap-4">
+            <span class="size-10 grid place-items-center bg-white rounded-full">
+              <Icon icon="envelope" class="text-primary-500" />
+            </span>
+            <p class="text-lg font-medium text-white">Email</p>
+          </div>
+          <p class="text-5xl font-medium text-white">support.help@wuzimed.com</p>
+        </div>
       </div>
     </template>
   </Section>
 
-  <Section class="bg-primary-950 text-white">
-
-
-  </Section>
 </template>
