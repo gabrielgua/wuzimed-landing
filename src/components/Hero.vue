@@ -27,9 +27,8 @@ import Icon from './Icon.vue';
             supplies
           </h1>
           <p class="text-text-primary font-light text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni perspiciatis debitis ex voluptate, cum earum
-            deserunt totam ratione culpa reiciendis maiores quibusdam iste nulla. Est ducimus veritatis incidunt.
-            Eveniet, quas?
+            We provide high-quality products designed to enhance customer satisfaction, ensuring safety, reliability,
+            and innovation in every solution.
           </p>
         </div>
         <Button variant="primary" size="lg" class="w-full justify-between">

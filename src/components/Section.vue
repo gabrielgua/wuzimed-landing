@@ -6,7 +6,7 @@ import Container from './Container.vue';
 <template>
   <section class="py-12 md:py-18 lg:py-24 transition-all relative overflow-hidden">
     <Container class="flex flex-col gap-12 ">
-      <header v-if="$slots['title'] || $slots['subtitle']" class="text-center">
+      <header v-if="$slots['title'] || $slots['subtitle']">
         <h2 class="text-text-primary font-bold text-3xl mb-3" v-if="$slots['title']">
           <slot name="title">Title</slot>
         </h2>

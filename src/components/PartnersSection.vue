@@ -7,15 +7,12 @@ import Section from './Section.vue';
 <template>
   <Section class="bg-bg-base bg-[url('/src/assets/svgs/wave_blue.svg')] bg-no-repeat bg-cover bg-center">
     <template #title>
-      <div class="text-center">Our Partners</div>
+      Our Partners
     </template>
     <template #subtitle>
-      <div class="text-center">
-        We collaborate with leading medical suppliers to bring you the best products available.
-      </div>
+      We collaborate with leading medical suppliers to bring you the best products available.
     </template>
     <template #content>
-
       <div
         class="flex flex-wrap items-center z-10 justify-between gap-10 bg-white border border-slate-200 p-7 shadow-2xl shadow-primary-100/20 rounded-xl">
 

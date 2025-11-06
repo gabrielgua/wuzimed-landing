@@ -18,9 +18,9 @@ import Section from './Section.vue';
       </div>
     </template>
     <template #content>
-      <div class="grid md:grid-cols-2 xl:grid-cols-[auto_1fr] gap-16 transition-all border-b border-b-slate-800 pb-12">
-        <div class="p-4 bg-white rounded-3xl">
-          <img src="https://placehold.co/750x500" alt="" class="rounded-2xl">
+      <div class="grid md:grid-cols-2 gap-16 transition-all border-b border-b-slate-800 pb-12">
+        <div class="p-4 bg-white rounded-3xl max-h-max">
+          <img src="../assets/images/aboutus.jpg" alt="Who we are" class="rounded-2xl w-full">
         </div>
 
         <div class="space-y-6">
@@ -45,8 +45,7 @@ import Section from './Section.vue';
         </div>
 
       </div>
-      <div
-        class="grid md:grid-cols-2 xl:grid-cols-[1fr_2fr] gap-6 md:gap-16 transition-all border-b border-b-slate-800 pb-12">
+      <div class="grid md:grid-cols-2 gap-6 md:gap-16 transition-all border-b border-b-slate-800 pb-12">
         <ul class="space-y-4 order-2">
           <Accordion>
             <template #icon>
@@ -87,7 +86,7 @@ import Section from './Section.vue';
           </Accordion>
         </ul>
 
-        <div class="space-y-6">
+        <div class="space-y-6 flex flex-col items-end text-right">
           <div class="size-14 bg-white rounded-full grid place-items-center">
             <Icon icon="bullseye" class="text-2xl text-primary-500" />
           </div>

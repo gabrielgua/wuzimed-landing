@@ -5,11 +5,17 @@ import Button from './Button.vue';
 import Section from './Section.vue';
 import Icon from './Icon.vue';
 
+import HealthCareImg from '@/assets/images/categories/healthcare.jpeg';
+import SkinCareImg from '@/assets/images/categories/skincare.jpg'
+import PersonalHygieneImg from '@/assets/images/categories/personalhygiene.jpg'
+import PainReliefImg from '@/assets/images/categories/painreliefjpg.jpg'
+
+
 const categories = computed(() => [
-  { title: 'Category 1', description: 'Description 1', img: 'https://placehold.co/200' },
-  { title: 'Category 2', description: 'Description 2', img: 'https://placehold.co/200' },
-  { title: 'Category 3', description: 'Description 3', img: 'https://placehold.co/200' },
-  { title: 'Category 4', description: 'Description 4', img: 'https://placehold.co/200' },
+  { title: 'Health Care', description: 'Reliable medical supplies and health essentials.', img: HealthCareImg },
+  { title: 'Skin Care', description: 'Everything your skin needs to stay healthy and radiant.', img: SkinCareImg },
+  { title: 'Personal Hygiene', description: 'Designed to maintain hygiene and confidence throughout the day.', img: PersonalHygieneImg },
+  { title: 'Pain Relief & Recovery', description: 'Ideal for post-workout recovery or everyday aches and pains.', img: PainReliefImg },
 ]);
 
 </script>
