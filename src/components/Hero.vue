@@ -7,7 +7,7 @@ import Icon from './Icon.vue';
 </script>
 
 <template>
-  <main class="relative py-6 md:py-12 bg-bg-base">
+  <section class="relative py-6 md:py-12 bg-bg-base">
     <div
       class="absolute w-full h-full bottom-0 left-0 bg-[url('/src/assets/svgs/wave_white.svg')] bg-no-repeat bg-cover bg-bottom">
 
@@ -35,7 +35,7 @@ import Icon from './Icon.vue';
         </Button>
       </div>
     </Container>
-  </main>
+  </section>
 </template>
 
 <style lang="css" scoped>
