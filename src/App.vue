@@ -17,6 +17,5 @@ import PartnersSection from './components/PartnersSection.vue';
   <PartnersSection />
   <AboutSection />
   <ContactSection />
-
   <Footer />
 </template>

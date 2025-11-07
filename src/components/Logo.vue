@@ -1,15 +1,11 @@
+<script setup lang="ts">
+import LogoDefault from '@/assets/images/wuzimed_logo_black.png';
+import LogoLight from '@/assets/images/wuzimed_logo_white.png';
+
+defineProps<{ variant?: 'default' | 'light' }>();
+
+</script>
+
 <template>
-  <div class="flex items-center gap-2 text-xl md:text-2xl transition-all text-primary-950">
-    <img src="/src/assets/images/wuzimed_cross.png" alt="Wuzi Med Logo" class="w-[25px]" />
-    <p class="momo-font">
-      <span class="">Wuzi</span>
-      <span class="text-primary-300">med</span>
-      <!-- <span>.</span> -->
-    </p>
-  </div>
+  <img :src="variant === 'light' ? LogoLight : LogoDefault" alt="Wuzi Med Logo" class="w-[120px] -ml-1" />
 </template>
-<style scoped>
-.momo-font {
-  font-family: "Momo Trust Display", sans-serif;
-}
-</style>

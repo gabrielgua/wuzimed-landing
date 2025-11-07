@@ -8,9 +8,9 @@ import Logo from './Logo.vue';
 
 <template>
   <footer class="bg-secondary-950 pt-12 pb-6">
-    <Container class="flex flex-wrap justify-between *:grow ">
+    <Container class="flex flex-wrap justify-between gap-12 *:grow ">
       <div class="space-y-4">
-        <Logo />
+        <Logo variant="light" />
         <p class="text-secondary-200 text-sm font-light">
           Welcome to WuziMed,
           <br>

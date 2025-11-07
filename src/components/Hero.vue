@@ -22,9 +22,7 @@ import Icon from './Icon.vue';
             <span class="text-primary-500">Welcome</span>
             to WuziMed,
             <br>
-            here to help you manage your
-            <span class="text-primary-500">medical</span>
-            supplies
+            here to help you health care <span class="text-primary-500">needs</span>
           </h1>
           <p class="text-text-primary font-light text-sm">
             We provide high-quality products designed to enhance customer satisfaction, ensuring safety, reliability,
