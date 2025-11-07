@@ -4,7 +4,7 @@ export type ButtonProps = {
   size?: ButtonSize
 }
 
-export type ButtonVariant = 'primary' | 'secondary' | 'neutral';
+export type ButtonVariant = 'primary' | 'secondary' | 'neutral' | 'neutral-transparent';
 export type ButtonSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 
 
@@ -16,7 +16,8 @@ withDefaults(defineProps<ButtonProps>(), {
 const buttonStyles = new Map<ButtonVariant, string>([
   ['primary', 'text-white bg-linear-to-b from-sky-400 to-primary-600'],
   ['secondary', 'text-white bg-linear-to-b from-secondary-700 to-secondary-950'],
-  ['neutral', 'text-text-primary bg-linear-to-b from-white to-secondary-400']
+  ['neutral', 'text-text-primary bg-linear-to-b from-white to-secondary-400'],
+  ['neutral-transparent', 'text-text-primary bg-none p-0!']
 ])
 
 const buttonSizes = new Map<ButtonSize, string>([

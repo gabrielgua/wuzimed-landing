@@ -15,7 +15,7 @@ const toggleHeaderMobile = () => showHeaderMobile.value = !showHeaderMobile.valu
 </script>
 
 <template>
-  <header class="bg-white shadow-2xl shadow-primary-300/40 sticky top-0 z-50 py-4 lg:py-8 space-y-4 lg:space-y-8">
+  <header class="bg-white shadow-2xl shadow-primary-300/40 sticky top-0 z-50 py-6 lg:py-8 space-y-6 md:space-y-0">
     <Container class="flex items-center justify-between transition-all">
       <RouterLink to="/">
         <Logo />
@@ -25,12 +25,12 @@ const toggleHeaderMobile = () => showHeaderMobile.value = !showHeaderMobile.valu
         <Icon icon="magnifying-glass" size="sm" class="text-primary-950" />
         <LanguageSelect />
       </div>
-      <Button @click="toggleHeaderMobile" variant="neutral" class="bg-none! md:hidden">
+      <Button @click="toggleHeaderMobile" variant="neutral-transparent" class="md:hidden">
         <Icon icon="bars" size="lg" />
       </Button>
     </Container>
     <FadeFromTopTransition>
-      <Container v-if="showHeaderMobile">
+      <Container class="md:hidden" v-if="showHeaderMobile">
         <nav class="space-y-4 lg:space-y-8">
           <HeaderLinks @click="toggleHeaderMobile" class="flex-col items-start gap-4!" />
           <LanguageSelect />
