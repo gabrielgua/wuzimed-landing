@@ -27,7 +27,7 @@ const categories = computed(() => [
       Explore our wide range of medical supplies designed to meet all your healthcare needs.
     </template>
     <template #content>
-      <ul class="gap-3 lg:gap-4 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 transition-all">
+      <ul class="gap-3 lg:gap-4 grid sm:grid-cols-2 lg:grid-cols-4 transition-all">
 
         <Card v-for="(categorie, index) in categories" :key="index"
           class="flex flex-col hover:scale-105 transition-all p-3! lg:p-4!">

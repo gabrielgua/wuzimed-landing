@@ -14,7 +14,7 @@ import Section from './Section.vue';
     </template>
     <template #content>
       <div
-        class="flex flex-wrap items-center z-10 justify-between gap-10 bg-white border border-slate-200 p-7 shadow-2xl shadow-primary-100/20 rounded-xl">
+        class="flex flex-wrap items-center z-10 justify-between gap-6 md:gap-10 bg-white border border-slate-200 p-7 shadow-2xl shadow-primary-100/20 rounded-xl">
 
         <PartnerBrandBox>
           <img src="../assets/images/partners/bd.jpeg" alt="BD" class="scale-80" />
