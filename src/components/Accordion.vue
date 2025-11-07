@@ -2,6 +2,7 @@
 import { ref } from 'vue';
 import Card from './Card.vue';
 import Icon from './Icon.vue';
+import FadeFromTopTransition from './FadeFromTopTransition.vue';
 
 const showContent = ref(false)
 </script>
@@ -21,29 +22,11 @@ const showContent = ref(false)
       <Icon icon="angle-down" class="text-sm text-text-secondary ml-auto transition-all"
         :class="{ 'rotate-180': showContent }" />
     </div>
-    <Transition name="fade-from-top" mode="out-in">
+    <FadeFromTopTransition>
       <p v-if="showContent" class="text-text-secondary font-medium">
         <slot name="content" />
       </p>
-    </Transition>
+    </FadeFromTopTransition>
   </Card>
 
 </template>
-<style scoped>
-.fade-from-top-enter-active,
-.fade-from-top-leave-active {
-  transition: all 0.3s ease;
-}
-
-.fade-from-top-enter-from,
-.fade-from-top-leave-to {
-  opacity: 0;
-  transform: translateY(-10px);
-}
-
-.fade-from-top-enter-to,
-.fade-from-top-leave-from {
-  opacity: 1;
-  transform: translateY(0);
-}
-</style>
