@@ -52,7 +52,7 @@ import Section from './components/Section.vue';
 
 
       </div>
-      <Button variant="secondary" size="xl" class="w-full justify-between lg:max-w-max">
+      <Button variant="secondary" size="lg" class="w-full justify-between lg:max-w-max">
         Contact us
         <Icon icon="arrow-right" class="text-xs" />
       </Button>

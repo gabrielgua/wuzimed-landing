@@ -18,7 +18,7 @@ import Section from './Section.vue';
       </div>
     </template>
     <template #content>
-      <div class="grid md:grid-cols-2 gap-16 transition-all border-b border-b-slate-800 pb-12">
+      <div class="grid lg:grid-cols-2 gap-16 transition-all border-b border-b-slate-800 pb-12">
         <div class="p-4 bg-white rounded-3xl max-h-max">
           <img src="../assets/images/aboutus.jpg" alt="Who we are" class="rounded-2xl w-full">
         </div>
