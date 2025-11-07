@@ -7,7 +7,7 @@ import Icon from './Icon.vue';
 </script>
 
 <template>
-  <section class="relative py-6 md:py-12 bg-bg-base">
+  <section class="relative py-6 md:py-12 bg-bg-base bg-dotted">
     <div
       class="absolute w-full h-full bottom-0 left-0 bg-[url('/src/assets/svgs/wave_white.svg')] bg-no-repeat bg-cover bg-bottom">
 
@@ -22,7 +22,7 @@ import Icon from './Icon.vue';
             <span class="text-primary-500">Welcome</span>
             to WuziMed,
             <br>
-            here to help you health care <span class="text-primary-500">needs</span>
+            here to help you manage your health care <span class="text-primary-500">needs</span>!
           </h1>
           <p class="text-text-primary font-light text-sm">
             We provide high-quality products designed to enhance customer satisfaction, ensuring safety, reliability,
@@ -39,7 +39,7 @@ import Icon from './Icon.vue';
 </template>
 
 <style lang="css" scoped>
-main {
+.bg-dotted {
   background-image: radial-gradient(var(--color-primary-500) 1px, transparent 0);
   background-size: 2.5rem 2.5rem;
   background-position: -19px -10px;
