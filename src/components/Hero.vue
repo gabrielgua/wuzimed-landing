@@ -18,19 +18,21 @@ import Icon from './Icon.vue';
 
         <Icon icon="hand-sparkles" class="text-primary-500 text-2xl" />
         <div class="flex flex-col gap-6">
-          <h1 class="text-4xl font-bold text-text-primary">
-            <span class="text-primary-500">Welcome</span>
-            to WuziMed,
+          <h1 class="text-4xl">
+            <span class="text-primary-500 font-bold ">
+              {{ $t('heroSectionTitle') }}
+            </span>
             <br>
-            here to help you manage your health care <span class="text-primary-500">needs</span>!
+            <span class="font-semibold text-text-primary">
+              {{ $t('heroSectionTitleFollowUp') }}
+            </span>
           </h1>
           <p class="text-text-primary font-light text-sm">
-            We provide high-quality products designed to enhance customer satisfaction, ensuring safety, reliability,
-            and innovation in every solution.
+            {{ $t('heroSectionSubtitle') }}
           </p>
         </div>
         <Button variant="primary" size="lg" class="w-full justify-between">
-          More information
+          {{ $t('heroSectionCtaButton') }}
           <Icon icon="arrow-right" size="sm" />
         </Button>
       </div>

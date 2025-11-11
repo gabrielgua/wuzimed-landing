@@ -2,5 +2,10 @@
   "headerHomeLink": "Home",
   "headerAboutLink": "About us",
   "headerPartnersLink": "Partners",
-  "headerContactLink": "Contact"
+  "headerContactLink": "Contact",
+
+  "heroSectionTitle": "Welcome to WuziMed,",
+  "heroSectionTitleFollowUp": "here to help you manage your health care needs!",
+  "heroSectionSubtitle": "We provide high-quality products designed to enhance customer satisfaction, ensuring safety, reliability, and innovation in every solution.",
+  "heroSectionCtaButton": "More information"
 }
