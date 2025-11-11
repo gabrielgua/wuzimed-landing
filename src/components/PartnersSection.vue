@@ -1,16 +1,19 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
 import PartnerBrandBox from './PartnerBrandBox.vue';
 import Section from './Section.vue';
+
+const { t } = useI18n();
 
 </script>
 
 <template>
   <Section class="bg-bg-base bg-[url('/src/assets/svgs/wave_blue.svg')] bg-no-repeat bg-cover bg-center">
     <template #title>
-      Our Partners
+      {{ t('partnersSectionTitle') }}
     </template>
     <template #subtitle>
-      We collaborate with leading medical suppliers to bring you the best products available.
+      {{ t('partnersSectionSubtitle') }}
     </template>
     <template #content>
       <div
