@@ -4,17 +4,17 @@ import Button from './Button.vue';
 import Icon from './Icon.vue';
 import Section from './Section.vue';
 
+
 </script>
 
 <template>
   <Section class="bg-linear-to-b from-primary-950 to-secondary-950 text-white">
     <template #title>
-      <span class="text-white">About us</span>
+      <span class="text-white">{{ $t('aboutSectionTitle') }}</span>
     </template>
     <template #subtitle>
       <div class="text-slate-300">
-        We are committed to delivering the best services to our clients, ensuring quality and excellence in every
-        project we undertake.
+        {{ $t('aboutSectionSubtitle') }}
       </div>
     </template>
     <template #content>
@@ -27,19 +27,15 @@ import Section from './Section.vue';
           <div class="size-14 bg-white rounded-full grid place-items-center">
             <Icon icon="info-circle" class="text-2xl text-primary-500" />
           </div>
-          <h2 class="font-bold text-3xl">Who we are?</h2>
+          <h2 class="font-bold text-3xl">{{ $t('aboutSectionWhoWeAreTitle') }}</h2>
           <div class="mb-6 text-base text-slate-300">
-            Our company has been at the forefront of innovation, consistently pushing the boundaries to deliver
-            exceptional value to our customers. With a dedicated team of professionals, we strive to exceed
-            expectations and foster long-term relationships built on trust and integrity.
+            {{ $t('aboutSectionWhoWeAreParagraph1') }}
           </div>
           <div class="mb-6 text-base text-slate-300">
-            We believe in a customer-centric approach, tailoring our solutions to meet the unique needs of each client.
-            Our commitment to excellence is reflected in our rigorous quality standards and continuous improvement
-            initiatives.
+            {{ $t('aboutSectionWhoWeAreParagraph2') }}
           </div>
           <Button variant="primary" size="lg" class="w-full justify-between lg:max-w-max">
-            Learn More
+            {{ $t('aboutSectionWhoWeAreCtaButton') }}
             <Icon icon="arrow-right" class="text-xs" />
           </Button>
         </div>
@@ -51,38 +47,29 @@ import Section from './Section.vue';
             <template #icon>
               <Icon icon="martini-glass" />
             </template>
-            <template #title>High-Quality Products</template>
-            <template #content>
-              Carefully sourced and crafted, our products meet the highest standards of quality and reliability.
-            </template>
+            <template #title>{{ $t('aboutSectionWhyChooseUsTopic1Title') }}</template>
+            <template #content>{{ $t('aboutSectionWhyChooseUsTopic1Description') }}</template>
           </Accordion>
           <Accordion>
             <template #icon>
               <Icon icon="handshake" />
             </template>
-            <template #title>Expertise & Commitment</template>
-            <template #content>
-              Our team of professionals is dedicated to providing exceptional service and support to our clients.
-            </template>
+            <template #title>{{ $t('aboutSectionWhyChooseUsTopic2Title') }}</template>
+            <template #content>{{ $t('aboutSectionWhyChooseUsTopic2Description') }}</template>
           </Accordion>
           <Accordion>
             <template #icon>
               <Icon icon="shield-halved" />
             </template>
-            <template #title>Trusted & Reliable</template>
-            <template #content>
-              We have built a reputation for reliability and trustworthiness in the industry over the years.
-            </template>
+            <template #title>{{ $t('aboutSectionWhyChooseUsTopic3Title') }}</template>
+            <template #content>{{ $t('aboutSectionWhyChooseUsTopic3Description') }}</template>
           </Accordion>
           <Accordion>
             <template #icon>
               <Icon icon="certificate" />
             </template>
-            <template #title>Quality Assurance</template>
-            <template #content>
-              We adhere to the highest standards of quality in all our services, ensuring that our clients receive
-              nothing but the best.
-            </template>
+            <template #title>{{ $t('aboutSectionWhyChooseUsTopic4Title') }}</template>
+            <template #content>{{ $t('aboutSectionWhyChooseUsTopic4Description') }}</template>
           </Accordion>
         </ul>
 
@@ -90,11 +77,9 @@ import Section from './Section.vue';
           <div class="size-14 bg-white rounded-full grid place-items-center">
             <Icon icon="bullseye" class="text-2xl text-primary-500" />
           </div>
-          <h2 class="font-bold text-3xl">Why choose us?</h2>
+          <h2 class="font-bold text-3xl">{{ $t('aboutSectionWhyChooseUsTitle') }}</h2>
           <p class="text-base text-slate-300">
-            Choosing us means partnering with a team that is dedicated to your success. We bring a wealth of
-            experience and expertise to the table, ensuring that our solutions are not only effective but also
-            innovative and forward-thinking.
+            {{ $t('aboutSectionWhyChooseUsParagraph1') }}
           </p>
         </div>
       </div>

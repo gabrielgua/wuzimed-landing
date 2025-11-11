@@ -6,6 +6,7 @@ import { useI18n } from 'vue-i18n';
 
 const { locale } = useI18n();
 const langStore = useLangStore();
+locale.value = langStore.locale;
 watch(() => langStore.locale, (newLocale) => {
   locale.value = newLocale;
 })
