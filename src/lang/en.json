@@ -7,5 +7,20 @@
   "heroSectionTitle": "Welcome to WuziMed,",
   "heroSectionTitleFollowUp": "here to help you manage your health care needs!",
   "heroSectionSubtitle": "We provide high-quality products designed to enhance customer satisfaction, ensuring safety, reliability, and innovation in every solution.",
-  "heroSectionCtaButton": "More information"
+  "heroSectionCtaButton": "More information",
+
+  "categoriesSectionTitle": "Our Selection",
+  "categoriesSectionSubtitle": "Explore our wide range of medical supplies designed to meet all your healthcare needs.",
+
+  "categoriesSectionItem1Title": "Health Care",
+  "categoriesSectionItem1Description": "Reliable medical supplies and health essentials.",
+
+  "categoriesSectionItem2Title": "Skin Care",
+  "categoriesSectionItem2Description": "Everything your skin need to stay healthy and radiant.",
+
+  "categoriesSectionItem3Title": "Personal Hygiene",
+  "categoriesSectionItem3Description": "Designed to maintain hygiene and confidence throughout the day.",
+
+  "categoriesSectionItem4Title": "Pain Relief & Recovery",
+  "categoriesSectionItem4Description": "Ideal for post-workout recovery or everyday aches and pains."
 }

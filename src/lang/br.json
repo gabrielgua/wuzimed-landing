@@ -7,5 +7,20 @@
   "heroSectionTitle": "Bem-vindo à WuziMed,",
   "heroSectionTitleFollowUp": "aqui para ajudar você a gerenciar suas necessidades de saúde!",
   "heroSectionSubtitle": "Oferecemos produtos de alta qualidade projetados para aumentar a satisfação do cliente, garantindo segurança, confiabilidade e inovação em cada solução.",
-  "heroSectionCtaButton": "Saber mais"
+  "heroSectionCtaButton": "Saber mais",
+
+  "categoriesSectionTitle": "Nossa Seleção",
+  "categoriesSectionSubtitle": "Explore nossa ampla gama de suprimentos médicos projetados para atender a todas as suas necessidades de saúde.",
+
+  "categoriesSectionItem1Title": "Para sua Saúde",
+  "categoriesSectionItem1Description": "Suprimentos médicos confiáveis e essenciais para a saúde.",
+
+  "categoriesSectionItem2Title": "Rotina de beleza",
+  "categoriesSectionItem2Description": "Tudo o que sua pele precisa para se manter saudável e radiante.",
+
+  "categoriesSectionItem3Title": "Higiene Pessoal",
+  "categoriesSectionItem3Description": "Projetado para manter a higiene e a confiança ao longo do dia.",
+
+  "categoriesSectionItem4Title": "Alívio da Dor e Recuperação",
+  "categoriesSectionItem4Description": "Ideal para recuperação pós-treino ou dores e desconfortos do dia a dia."
 }

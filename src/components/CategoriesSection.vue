@@ -9,22 +9,25 @@ import HealthCareImg from '@/assets/images/categories/healthcare.jpeg';
 import SkinCareImg from '@/assets/images/categories/skincare.jpg'
 import PersonalHygieneImg from '@/assets/images/categories/personalhygiene.jpg'
 import PainReliefImg from '@/assets/images/categories/painreliefjpg.jpg'
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 
 
 const categories = computed(() => [
-  { title: 'Health Care', description: 'Reliable medical supplies and health essentials.', img: HealthCareImg },
-  { title: 'Skin Care', description: 'Everything your skin needs to stay healthy and radiant.', img: SkinCareImg },
-  { title: 'Personal Hygiene', description: 'Designed to maintain hygiene and confidence throughout the day.', img: PersonalHygieneImg },
-  { title: 'Pain Relief & Recovery', description: 'Ideal for post-workout recovery or everyday aches and pains.', img: PainReliefImg },
+  { title: t('categoriesSectionItem1Title'), description: t('categoriesSectionItem1Description'), img: HealthCareImg },
+  { title: t('categoriesSectionItem2Title'), description: t('categoriesSectionItem2Description'), img: SkinCareImg },
+  { title: t('categoriesSectionItem3Title'), description: t('categoriesSectionItem3Description'), img: PersonalHygieneImg },
+  { title: t('categoriesSectionItem4Title'), description: t('categoriesSectionItem4Description'), img: PainReliefImg },
 ]);
 
 </script>
 
 <template>
   <Section>
-    <template #title>Our Selection</template>
+    <template #title>{{ $t('categoriesSectionTitle') }}</template>
     <template #subtitle>
-      Explore our wide range of medical supplies designed to meet all your healthcare needs.
+      {{ $t('categoriesSectionSubtitle') }}
     </template>
     <template #content>
       <ul class="gap-3 lg:gap-4 grid sm:grid-cols-2 lg:grid-cols-4 transition-all">
