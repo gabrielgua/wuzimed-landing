@@ -5,9 +5,9 @@ import HeaderLink from './HeaderLink.vue';
 
 <template>
   <ul class="flex items-center gap-6 text-sm font-medium">
-    <HeaderLink to="/">Home</HeaderLink>
-    <HeaderLink to="/about">About Us</HeaderLink>
-    <HeaderLink to="/partners">Partners</HeaderLink>
-    <HeaderLink to="/contact">Contact</HeaderLink>
+    <HeaderLink to="/">{{ $t('headerHomeLink') }}</HeaderLink>
+    <HeaderLink to="/about">{{ $t('headerAboutLink') }}</HeaderLink>
+    <HeaderLink to="/partners">{{ $t('headerPartnersLink') }}</HeaderLink>
+    <HeaderLink to="/contact">{{ $t('headerContactLink') }}</HeaderLink>
   </ul>
 </template>

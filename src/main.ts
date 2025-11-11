@@ -3,6 +3,8 @@ import { createPinia } from 'pinia'
 
 import App from './App.vue'
 import router from './router'
+import { i18n } from './lang/i18n'
+
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -16,5 +18,6 @@ const app = createApp(App)
 app.component('faicon', FontAwesomeIcon)
 app.use(createPinia())
 app.use(router)
+app.use(i18n)
 
 app.mount('#app')

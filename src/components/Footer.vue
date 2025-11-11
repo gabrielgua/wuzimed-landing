@@ -53,7 +53,7 @@ import Logo from './Logo.vue';
       </FooterSection>
       <FooterSection>
         <template #title>Location</template>
-        <p class="font-medium text-bg-base text-sm">São Paulo, BR</p>
+        <p class="font-medium text-bg-base text-sm">Québec, CA</p>
       </FooterSection>
     </Container>
     <Container class="py-6">

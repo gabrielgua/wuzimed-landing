@@ -1,10 +1,14 @@
 <script lang="ts" setup>
-import { ref } from 'vue';
+import { useLangStore } from '@/stores/lang.store';
+import { watch } from 'vue';
+import { useI18n } from 'vue-i18n';
 
 
-type Languages = 'en' | 'fr' | 'br';
-
-const lang = ref<Languages>('en');
+const { locale } = useI18n();
+const langStore = useLangStore();
+watch(() => langStore.locale, (newLocale) => {
+  locale.value = newLocale;
+})
 
 const languageOptions = [
   { value: 'en', text: 'EN' },
@@ -23,10 +27,11 @@ const languages = new Map<string, string>([
 <template>
   <main class="flex items-center px-2 border border-slate-200 divide-x divide-slate-200 rounded-xl">
     <div class="p-2 ps-0">
-      <img :src="languages.get(lang)">
+      <img :src="languages.get(langStore.locale)" alt="Language Flag" />
     </div>
 
-    <select v-model="lang" class="text-sm w-full md:w-max ps-1" name="lang" id="lang">
+    <select v-model="langStore.locale" @change="langStore.setLocale(langStore.locale)"
+      class="text-sm w-full md:w-max ps-1" name="lang" id="lang">
       <option v-for="option in languageOptions" class="text-text-primary" :key="option.value" :value="option.value">
         {{ option.text }}
       </option>

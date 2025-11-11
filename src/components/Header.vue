@@ -20,7 +20,7 @@ const toggleHeaderMobile = () => showHeaderMobile.value = !showHeaderMobile.valu
       <RouterLink to="/">
         <Logo />
       </RouterLink>
-      <HeaderLinks class="hidden md:flex " />
+      <HeaderLinks class="hidden md:flex" />
       <div class="hidden md:flex items-center gap-6">
         <Icon icon="magnifying-glass" size="sm" class="text-primary-950" />
         <LanguageSelect />

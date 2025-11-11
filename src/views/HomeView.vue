@@ -9,7 +9,7 @@ import PartnersSection from '@/components/PartnersSection.vue';
 
 <template>
   <Hero />
-  <CategoriesSection />
+  <CategoriesSection id="products" />
   <PartnersSection />
   <AboutSection />
   <ContactSection />
