@@ -2,14 +2,14 @@
 import { ref } from 'vue';
 import Button from './Button.vue';
 import Container from './Container.vue';
-import FadeFromTopTransition from './FadeFromTopTransition.vue';
+import FadeFromTopTransition from './transitions/FadeFromTopTransition.vue';
+import FadeInTransition from './transitions/FadeinTransition.vue';
+import FadeTransition from './transitions/FadeTransition.vue';
 import HeaderLinks from './HeaderLinks.vue';
 import Icon from './Icon.vue';
 import LanguageSelect from './LanguageSelect.vue';
 import Logo from './Logo.vue';
 import { useScrollLock } from '@/composables/useScrollLock';
-import FadeTransition from './FadeTransition.vue';
-import FadeInTransition from './FadeinTransition.vue';
 
 const showHeaderMobile = ref(false);
 useScrollLock(showHeaderMobile);

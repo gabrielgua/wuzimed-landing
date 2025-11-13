@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 import Card from './Card.vue';
 import Icon from './Icon.vue';
-import FadeFromTopTransition from './FadeFromTopTransition.vue';
+import FadeFromTopTransition from './transitions/FadeFromTopTransition.vue';
 
 const showContent = ref(false)
 </script>
