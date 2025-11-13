@@ -40,7 +40,7 @@ const categories = computed(() => [
 
           <div class="mt-auto">
             <Button size="sm" class="w-full justify-center">
-              Explore
+              {{ $t('categoriesSectionItemCtaButton') }}
               <Icon icon="arrow-right" size="sm" />
             </Button>
           </div>

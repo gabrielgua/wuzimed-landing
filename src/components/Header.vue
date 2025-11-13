@@ -7,9 +7,11 @@ import HeaderLinks from './HeaderLinks.vue';
 import Icon from './Icon.vue';
 import LanguageSelect from './LanguageSelect.vue';
 import Logo from './Logo.vue';
+import FadeInTransition from './FadeInTransition.vue';
+import { useScrollLock } from '@/composables/useScrollLock';
 
 const showHeaderMobile = ref(false);
-
+useScrollLock(showHeaderMobile);
 const toggleHeaderMobile = () => showHeaderMobile.value = !showHeaderMobile.value;
 
 </script>
@@ -37,5 +39,9 @@ const toggleHeaderMobile = () => showHeaderMobile.value = !showHeaderMobile.valu
         </nav>
       </Container>
     </FadeFromTopTransition>
+    <FadeInTransition>
+      <div v-if="showHeaderMobile" class="md:hidden absolute bg-black/50 w-full min-h-dvh" @click="toggleHeaderMobile">
+      </div>
+    </FadeInTransition>
   </header>
 </template>
