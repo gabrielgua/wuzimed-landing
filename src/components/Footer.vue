@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { Constants } from '@/utils/constants';
 import Container from './Container.vue';
 import FooterSection from './FooterSection.vue';
 import Icon from './Icon.vue';
@@ -7,7 +8,7 @@ import Logo from './Logo.vue';
 </script>
 
 <template>
-  <footer class="bg-secondary-950 pt-12 pb-6">
+  <footer class="bg-secondary-950 pt-6 md:pt-12 pb-6">
     <Container class="flex flex-wrap justify-between gap-12 *:grow ">
       <div class="space-y-4">
         <Logo variant="light" />
@@ -47,8 +48,8 @@ import Logo from './Logo.vue';
       <FooterSection>
         <template #title>{{ $t('footerContactTitle') }}</template>
         <div class="font-medium text-sm text-bg-base">
-          <p>+1 (12) 0345-6789</p>
-          <p>support.help@wuzimed.com</p>
+          <p>{{ Constants.contactPhone }}</p>
+          <p>{{ Constants.contactEmail }}</p>
         </div>
       </FooterSection>
       <FooterSection>

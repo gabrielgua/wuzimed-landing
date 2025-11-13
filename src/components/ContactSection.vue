@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { Constants } from '@/utils/constants';
 import Button from './Button.vue';
 import Icon from './Icon.vue';
 import Section from './Section.vue';
@@ -18,7 +19,7 @@ import Section from './Section.vue';
             </span>
             <p class="font-medium text-text-primary">{{ $t('contactSectionPhoneNumber') }}</p>
           </div>
-          <p class="font-base text-4xl md:text-5xl lg:text-6xl text-text-primary">+1 (23) 4567-8910</p>
+          <p class="font-base text-4xl md:text-5xl lg:text-6xl text-text-primary">{{ Constants.contactPhone }}</p>
         </section>
 
         <section class="space-y-6">
@@ -29,7 +30,7 @@ import Section from './Section.vue';
             <p class="font-medium">{{ $t('contactSectionEmailAddress') }}</p>
           </div>
           <p class="font-base text-4xl md:text-5xl lg:text-6xl break-all lg:break-normal text-text-primary">
-            support.help@wuzimed.com
+            {{ Constants.contactEmail }}
           </p>
         </section>
 
