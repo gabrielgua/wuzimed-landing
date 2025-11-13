@@ -9,7 +9,7 @@ import LanguageSelect from './LanguageSelect.vue';
 import Logo from './Logo.vue';
 import { useScrollLock } from '@/composables/useScrollLock';
 import FadeTransition from './FadeTransition.vue';
-import FadeInTransition from './FadeInTransition.vue';
+import FadeInTransition from './FadeinTransition.vue';
 
 const showHeaderMobile = ref(false);
 useScrollLock(showHeaderMobile);
@@ -30,8 +30,8 @@ const toggleHeaderMobile = () => showHeaderMobile.value = !showHeaderMobile.valu
       </div>
       <Button @click="toggleHeaderMobile" variant="neutral-transparent" class="md:hidden">
         <FadeInTransition>
-          <Icon v-if="showHeaderMobile" icon="xmark" size="lg" />
-          <Icon v-else icon="bars" size="lg" />
+          <Icon v-if="showHeaderMobile" icon="xmark" size="lg" class="text-primary-500" />
+          <Icon v-else icon="bars" size="lg" class="text-primary-500" />
         </FadeInTransition>
       </Button>
     </Container>
