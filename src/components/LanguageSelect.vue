@@ -5,12 +5,14 @@ import { useI18n } from 'vue-i18n';
 
 const emit = defineEmits(['changed'])
 
-const { locale } = useI18n();
+
+const { t, locale } = useI18n();
 const langStore = useLangStore();
 locale.value = langStore.locale;
 
 watch(() => langStore.locale, (newLocale) => {
   locale.value = newLocale;
+  document.title = t('documentTitle');
 })
 
 const languageOptions = [
