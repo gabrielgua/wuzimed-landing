@@ -35,7 +35,7 @@ const toggleHeaderMobile = () => showHeaderMobile.value = !showHeaderMobile.valu
       <Container class="md:hidden" v-if="showHeaderMobile">
         <nav class="space-y-4 lg:space-y-8">
           <HeaderLinks @click="toggleHeaderMobile" class="flex-col items-start gap-4!" />
-          <LanguageSelect />
+          <LanguageSelect @changed="toggleHeaderMobile" />
         </nav>
       </Container>
     </FadeFromTopTransition>
