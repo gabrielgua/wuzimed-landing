@@ -54,5 +54,24 @@
   "contactSectionSubtitle": "Se você tiver alguma dúvida ou quiser saber mais sobre nossos serviços, não hesite em entrar em contato. Estamos aqui para ajudar!",
   "contactSectionPhoneNumber": "Número de Telefone",
   "contactSectionEmailAddress": "Endereço de Email",
-  "contactSectionCtaButton": "Contate-Nos"
+  "contactSectionCtaButton": "Contate-Nos",
+
+  "footerHeroText1": "Bem-vindo à WuziMed,",
+  "footerHeroText2": "aqui para ajudar você a cuidar da sua saúde!",
+
+  "footerSocialsTitle": "Redes Sociais",
+
+  "footerQuickLinksTitle": "Links Rápidos",
+  "footerQuickLink1": "Início",
+  "footerQuickLink2": "Sobre Nós",
+  "footerQuickLink3": "Parceiros",
+  "footerQuickLink4": "Contato",
+
+  "footerContactTitle": "Informações de Contato",
+
+  "footerLocationTitle": "Localização",
+  "footerLocationAddressLine1": "Québec QC, Canadá",
+
+  "footerRightsReserved": "Todos os direitos reservados.",
+  "footerDevelopedBy": "Desenvolvido por"
 }
