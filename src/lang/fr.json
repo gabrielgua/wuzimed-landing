@@ -1,4 +1,5 @@
 {
+  "documentTitle": "WuziMed - Suprimentos Médicos para suas Necessidades de Cuidados de Saúde",
   "headerHomeLink": "Accueil",
   "headerAboutLink": "À propos de nous",
   "headerPartnersLink": "Partenaires",
@@ -71,8 +72,8 @@
 
   "footerContactTitle": "Informations de Contact",
 
-  "footerLocationTitle": "Emplacement",
-  "footerLocationAddressLine1": "Québec QC, Canada",
+  "footerLocationTitle": "Adresse",
+  "footerLocationAddressLine1": "1188 Rue Saint-Louis, Gatineau QC - J8T 2L8, CA",
 
   "footerRightsReserved": "Tous droits réservés.",
   "footerDevelopedBy": "Développé par"

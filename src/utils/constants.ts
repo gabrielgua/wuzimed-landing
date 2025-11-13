@@ -1,4 +1,4 @@
 export const Constants = {
-  contactPhone: '+1-800-123-4567',
+  contactPhone: '+(819) 485-0698',
   contactEmail: 'support.help@wuzimed.com',
 }
