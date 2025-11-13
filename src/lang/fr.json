@@ -48,5 +48,11 @@
   "aboutSectionWhyChooseUsTopic3Description": "Au fil des années, nous avons construit une réputation de fiabilité et de transparence dans le secteur.",
 
   "aboutSectionWhyChooseUsTopic4Title": "Assurance Qualité",
-  "aboutSectionWhyChooseUsTopic4Description": "Nous respectons les normes de qualité les plus strictes dans tous nos services, garantissant à nos clients de recevoir uniquement le meilleur."
+  "aboutSectionWhyChooseUsTopic4Description": "Nous respectons les normes de qualité les plus strictes dans tous nos services, garantissant à nos clients de recevoir uniquement le meilleur.",
+
+  "contactSectionTitle": "Contactez-Nous",
+  "contactSectionSubtitle": "Si vous avez des questions ou souhaitez en savoir plus sur nos services, n'hésitez pas à nous contacter. Nous sommes là pour vous aider !",
+  "contactSectionPhoneNumber": "Numéro de Téléphone",
+  "contactSectionEmailAddress": "Adresse Email",
+  "contactSectionCtaButton": "Contactez-Nous"
 }

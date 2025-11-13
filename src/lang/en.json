@@ -48,5 +48,11 @@
   "aboutSectionWhyChooseUsTopic3Description": "We have built a reputation for reliability and trustworthiness in the industry over the years.",
 
   "aboutSectionWhyChooseUsTopic4Title": "Quality Assurance",
-  "aboutSectionWhyChooseUsTopic4Description": "We adhere to the highest standards of quality in all our services, ensuring that our clients receive nothing but the best."
+  "aboutSectionWhyChooseUsTopic4Description": "We adhere to the highest standards of quality in all our services, ensuring that our clients receive nothing but the best.",
+
+  "contactSectionTitle": "Get in Touch",
+  "contactSectionSubtitle": "If you have any questions or would like to learn more about our services, please don't hesitate to reach out. We're here to help!",
+  "contactSectionPhoneNumber": "Phone Number",
+  "contactSectionEmailAddress": "Email Address",
+  "contactSectionCtaButton": "Contact Us"
 }
